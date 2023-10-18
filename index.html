@@ -977,7 +977,7 @@
     .categorize .categorize-bottom .categorize-bottom-right img {
         width: 316px;
         vertical-align: middle;
-        background-color: red;
+        /* background-color: red; */
         transition: box-shadow 0.2s linear;
     }
 
@@ -1056,8 +1056,14 @@
         grid-row-gap: 14px;
     }
 
-    .phone .phone-content div {
+    .phone .phone-content>div {
         background-color: #ffffff;
+        transform: box-shadow 0.2s linear
+    }
+
+    .phone .phone-content>div:hover {
+        cursor: pointer;
+        box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .1);
     }
 
     .phone .phone-content div:nth-child(1) {
